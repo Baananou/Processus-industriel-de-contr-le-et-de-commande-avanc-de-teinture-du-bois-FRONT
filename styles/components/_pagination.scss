@@ -1,0 +1,26 @@
+.pagination-container {
+	@apply flex list-none flex-row-reverse justify-center gap-2.5;
+
+	.pagination-item {
+		@apply flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-primary-tint text-center font-bold text-dark;
+
+		&:first-child,
+		&:last-child {
+			@apply border-2 border-solid border-secondary text-secondary-tint;
+			> i {
+				@apply text-xs text-secondary;
+			}
+			&.disabled {
+				cursor: not-allowed;
+				@apply bg-secondary-tint text-dark-tint;
+			}
+		}
+		&.dots:hover {
+			@apply cursor-default bg-transparent;
+		}
+
+		&.selected {
+			@apply bg-secondary text-secondary-tint;
+		}
+	}
+}
