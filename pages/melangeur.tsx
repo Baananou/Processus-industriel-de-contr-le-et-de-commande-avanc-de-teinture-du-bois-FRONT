@@ -86,7 +86,26 @@ function Melangeur() {
 					</div>
 				</section>
 				<section className="absolute left-10 bottom-10">
-					<div className="flex flex-col items-start gap-2">
+					<div className="flex flex-col items-end gap-2">
+					<div className="flex items-center gap-2">
+							<label htmlFor="">C1</label>
+							<input
+								type="text"
+								className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
+								placeholder="Entrer valeur"
+							/>
+						</div>
+						<div className="flex items-center gap-2">
+							<label htmlFor="">C2</label>
+							<input
+								type="text"
+								className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
+								placeholder="Entrer valeur"
+							/>
+						</div>
+						<button className="bg-blue-500 text-white px-4 py-2 w-24  rounded">
+							RAZ
+						</button>
 						<div className="flex items-center gap-2">
 							<label htmlFor="">T1</label>
 							<button className="bg-blue-500 text-white px-4 py-2 w-24 rounded">
@@ -145,29 +164,11 @@ function Melangeur() {
 						</button>
 					</div>
 				</section>
-				<section className="absolute left-10 top-10">
-					<div className="flex flex-col items-start gap-2">
-						<div className="flex items-center gap-2">
-							<label htmlFor="">C1</label>
-							<input
-								type="text"
-								className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
-								placeholder="Entrer valeur"
-							/>
-						</div>
-						<div className="flex items-center gap-2">
-							<label htmlFor="">C2</label>
-							<input
-								type="text"
-								className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
-								placeholder="Entrer valeur"
-							/>
-						</div>
-						<button className="bg-blue-500 text-white px-4 py-2 rounded">
-							RAZ
-						</button>
+				{/* <section className="absolute left-10 top-10">
+					<div className="flex flex-col items-end gap-2">
+						
 					</div>
-				</section>
+				</section> */}
 			</section>
 			</section>
 		</Layout>
