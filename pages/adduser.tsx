@@ -8,28 +8,30 @@ interface FormData {
 	prenom: string;
 	poste: string;
 	matricule: string;
-
-
-  }
+}
 const Adduser = () => {
-  const router = useRouter();
+	const router = useRouter();
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormData>();
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm<FormData>();
 
-  const onSubmit = (data: { nom: string; prenom:string;  poste: string; matricule:string; }) => {
-    if (data) {
-      router.push("/adduser");
-    } else {
-      router.push("/500");
-    }
-  };
+	const onSubmit = (data: {
+		nom: string;
+		prenom: string;
+		poste: string;
+		matricule: string;
+	}) => {
+		if (data) {
+			router.push("/adduser");
+		} else {
+			router.push("/500");
+		}
+	};
 
-
-type Props = {};
+	type Props = {};
 
 	return (
 		<Layout>
@@ -37,17 +39,13 @@ type Props = {};
 				<section className="w-[1355px] h-[650px] flex justify-center items-center relative my-10 ">
 					<div className="flex flex-col gap-2 lg:bg-secondary md:bg-secondary p-24 items-center">
 						<div className="flex flex-col gap-2 lg:bg-secondary md:bg-secondary p-24 items-center">
-							<div className="text-2xl font-bold mb-4 underline">
-							</div>
+							<div className="text-2xl font-bold mb-4 underline"></div>
 							<form
 								onSubmit={handleSubmit(onSubmit)}
 								className="flex flex-col items-end"
 							>
 								<div className="mb-4">
-									<label
-										htmlFor="nom"
-										className="mb-2 font-bold text-primary"
-									>
+									<label htmlFor="nom" className="mb-2 font-bold text-primary">
 										nom:
 									</label>
 									<input
@@ -79,7 +77,7 @@ type Props = {};
 										<span className="text-red-500">prenom is required</span>
 									)}
 								</div>
-                                <div className="mb-4">
+								<div className="mb-4">
 									<label
 										htmlFor="poste"
 										className="mb-2 font-bold text-primary"
@@ -124,26 +122,26 @@ type Props = {};
 							</form>
 						</div>
 					</div>
-                    <section className="absolute right-10">
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
+					<section className="absolute right-10">
+						<div className="flex flex-col items-center">
+							<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
+								<span className="text-white text-xl font-bold">!</span>
+							</div>
+							<div>test</div>
 						</div>
-						<div>test</div>
-					</div>
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
+						<div className="flex flex-col items-center">
+							<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
+								<span className="text-white text-xl font-bold">!</span>
+							</div>
+							<div>test</div>
 						</div>
-						<div>test</div>
-					</div>
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
+						<div className="flex flex-col items-center">
+							<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
+								<span className="text-white text-xl font-bold">!</span>
+							</div>
+							<div>test</div>
 						</div>
-						<div>test</div>
-					</div>
-				</section>
+					</section>
 				</section>
 			</section>
 		</Layout>
