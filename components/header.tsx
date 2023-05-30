@@ -12,7 +12,7 @@ export default function Header() {
 						<Link passHref href="/">
 							<div className="flex items-center gap-2">
 								<div className="text-sm font-bold leading-relaxed inline-block py-2 whitespace-nowrap uppercase text-primary">
-									SAIF HAMDI PFE
+									SAIF HAMDI / WIEM MZALI
 								</div>
 							</div>
 						</Link>
@@ -32,7 +32,7 @@ export default function Header() {
 						id="example-navbar-danger"
 					>
 						<ul className="flex flex-col lg:flex-row list-none lg:ml-auto lg:items-center gap-2">
-							<li className="nav-item">
+							{/* <li className="nav-item">
 								<a
 									className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-primary hover:opacity-75"
 									href="https://www.linkedin.com/in/mohamed-yessine-baananou"
@@ -49,7 +49,7 @@ export default function Header() {
 									<i className="fab fa-github text-lg leading-lg text-primary opacity-75"></i>
 									<span className="ml-2">My Github</span>
 								</a>
-							</li>
+							</li> */}
 							{/* <li className="nav-item">
 								<a
 									className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-primary hover:opacity-75"

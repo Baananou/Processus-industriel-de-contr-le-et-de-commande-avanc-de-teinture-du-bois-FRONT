@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<footer className="relative bg-blueGray-200 pt-8 pb-6 bg-secondary">
 			<div className="container mx-auto px-4 ">
-				<div className="w-full px-4 flex flex-col items-center justify-center">
+				{/* <div className="w-full px-4 flex flex-col items-center justify-center">
 					<span className="block uppercase text-blueGray-500 text-xl font-semibold mb-2">
 						Useful Links
 					</span>
@@ -30,7 +30,7 @@ export default function Footer() {
 							</a>
 						</li>
 					</ul>
-				</div>
+				</div> */}
 				{/* <div className="flex flex-wrap text-left lg:text-left">
 					<div className="w-full px-4">
 						<div className="flex flex-wrap items-top mb-6">
@@ -51,7 +51,10 @@ export default function Footer() {
 						</div>
 					</div>
 				</div> */}
-				<div className="flex justify-center mt-6">
+				<div className="flex justify-center">
+					<h1 className="text-xl font-bold">Nom Du Projet</h1>
+				</div>
+				<div className="flex justify-center my-6">
 					<div className="mr-4">
 						<Image
 							src="/logowaialys.png"
@@ -75,7 +78,7 @@ export default function Footer() {
 								target="_blank"
 							>
 								{" "}
-								Saif Hamdi
+								SAIF HAMDI / WIEM MZALI
 							</a>
 						</div>
 					</div>
