@@ -6,9 +6,10 @@ interface BtnProps {
   variableLabel: string;
   variableId: string;
   name: string;
+  apiToken: any;
 }
 
-const Btn: React.FC<BtnProps> = ({ deviceLabel, variableLabel, variableId, name }) => {
+const Btn: React.FC<BtnProps> = ({ deviceLabel, variableLabel, variableId, name, apiToken }) => {
   const [value, setValue] = useState<number | null>(null);
   const [sirenActive, setSirenActive] = useState<boolean>(false);
 
@@ -17,7 +18,7 @@ const Btn: React.FC<BtnProps> = ({ deviceLabel, variableLabel, variableId, name 
       try {
         const response = await axios.get(`https://industrial.api.ubidots.com/api/v1.6/variables/${variableId}/values`, {
           headers: {
-            'X-Auth-Token': API_KEY,
+            'X-Auth-Token': apiToken,
             'Content-Type': 'application/json',
           },
         });
@@ -31,9 +32,7 @@ const Btn: React.FC<BtnProps> = ({ deviceLabel, variableLabel, variableId, name 
     };
 
     fetchValue();
-  }, [variableId]);
-
-  const API_KEY = process.env.UBIDOTS_API_TOKEN;
+  }, [variableId, apiToken]);
 
   const handleClick = async () => {
     try {
@@ -42,7 +41,7 @@ const Btn: React.FC<BtnProps> = ({ deviceLabel, variableLabel, variableId, name 
         value: newValue,
       }, {
         headers: {
-          'X-Auth-Token': API_KEY,
+          'X-Auth-Token': apiToken,
           'Content-Type': 'application/json',
         },
       });

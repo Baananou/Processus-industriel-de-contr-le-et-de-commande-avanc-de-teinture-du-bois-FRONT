@@ -1,6 +1,7 @@
 import { GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
+
 
 const Contact: NextPage = () => {
 	const router = useRouter();

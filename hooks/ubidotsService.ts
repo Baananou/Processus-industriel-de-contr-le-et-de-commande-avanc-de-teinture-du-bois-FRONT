@@ -11,7 +11,7 @@ interface UbidotsResponse {
 }
 
 // Modify these variables with your Ubidots credentials
-const API_KEY = process.env.UBIDOTS_API_TOKEN;
+const API_KEY = process.env.UBIDOTS_API_TOKEN1;
 // const DEVICE_LABEL = process.env.UBIDOTS_DEVICE_LABEL;
 
 export function useDeviceVariableData(variableId: string) {

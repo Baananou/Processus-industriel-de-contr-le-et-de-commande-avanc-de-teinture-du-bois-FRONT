@@ -1,17 +1,17 @@
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
-interface InputProps {
+interface InputColorProps {
   deviceLabel: string;
   variableLabel: string;
   variableId: string;
   name: string;
+  color: string;
   apiToken: any;
 }
 
-const Input: React.FC<InputProps> = ({ deviceLabel, variableLabel, variableId, name, apiToken }) => {
-  const [value, setValue] = useState<number | null>(null);
-  const [sirenActive, setSirenActive] = useState<boolean>(false);
+const InputColor: React.FC<InputColorProps> = ({ deviceLabel, variableLabel, variableId, name, color, apiToken }) => {
+  const [value, setValue] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -26,30 +26,27 @@ const Input: React.FC<InputProps> = ({ deviceLabel, variableLabel, variableId, n
 
         const fetchedValue = response.data.results[0].value;
         setValue(fetchedValue);
-        setSirenActive(fetchedValue === 1);
       } catch (error) {
         console.error('Error fetching variable value:', error);
       }
     };
 
     fetchValue();
-  }, [variableId, apiToken]);
+  }, [variableId]);
 
   const handleKeyPress = async (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       event.preventDefault();
       const inputValue = inputRef.current?.value;
 
-      if (inputValue && !isNaN(Number(inputValue))) {
-        const newNumericValue = Number(inputValue);
-
+      if (inputValue) {
         // Send the updated value to the API
-        await updateVariableValue(newNumericValue);
+        await updateVariableValue(inputValue);
       }
     }
   };
 
-  const updateVariableValue = async (newValue: number) => {
+  const updateVariableValue = async (newValue: string) => {
     try {
       const response = await axios.post(`https://industrial.api.ubidots.com/api/v1.6/variables/${variableId}/values`, {
         value: newValue,
@@ -62,7 +59,6 @@ const Input: React.FC<InputProps> = ({ deviceLabel, variableLabel, variableId, n
 
       const updatedValue = response.data.value;
       setValue(updatedValue);
-      setSirenActive(updatedValue === 1);
     } catch (error) {
       console.error('Error updating variable value:', error);
     }
@@ -70,19 +66,22 @@ const Input: React.FC<InputProps> = ({ deviceLabel, variableLabel, variableId, n
 
   return (
     <div>
-      <div className="flex items-center justify-center gap-2">
-        <label htmlFor="inputValue">{name}</label>
+      <div className="flex flex-col items-center justify-center gap-4">
+        <label htmlFor={`${name}Input`} className={`text-${color}-500 text-2xl font-bold`}>
+          {name}
+        </label>
         <input
+          id={`${name}Input`}
           type="text"
-          className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
+          className={`border border-${color}-500 px-4 py-2 rounded-md focus:outline-none focus:border-${color}-500`}
           placeholder="Enter value"
           ref={inputRef}
           onKeyDown={handleKeyPress}
-          defaultValue={value !== null ? value.toString() : ''}
+          defaultValue={value !== null ? value : ''}
         />
       </div>
     </div>
   );
 };
 
-export default Input;
+export default InputColor;

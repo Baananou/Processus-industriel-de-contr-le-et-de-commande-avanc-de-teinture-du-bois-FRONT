@@ -9,18 +9,19 @@ interface AlertProps {
   variableLabel: string;
   variableId: string;
   name: string;
+  apiToken: any;
 }
 
-const Alert: React.FC<AlertProps> = ({ deviceLabel, variableLabel, variableId, name }) => {
+const Alert: React.FC<AlertProps> = ({ deviceLabel, variableLabel, variableId, name, apiToken }) => {
   const [value, setValue] = useState<number | null>(null);
-  const [sirenActive, setSirenActive] = useState<boolean>(false); // Initialize the constant
+  const [sirenActive, setSirenActive] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchValue = async () => {
       try {
         const response = await axios.get(`https://industrial.api.ubidots.com/api/v1.6/devices/${deviceLabel}/${variableLabel}/lv`, {
           headers: {
-            'X-Auth-Token': API_KEY,
+            'X-Auth-Token': apiToken,
             'Content-Type': 'application/json',
           },
         });
@@ -38,20 +39,17 @@ const Alert: React.FC<AlertProps> = ({ deviceLabel, variableLabel, variableId, n
     };
 
     fetchValue();
-  }, [variableLabel]);
-
-  const API_KEY = process.env.UBIDOTS_API_TOKEN;
+  }, [variableLabel, apiToken]);
 
   return (
     <div>
-      <div className=" h-10 flex flex-col items-center justify-center gap-2">
+      <div className="h-10 flex flex-col items-center justify-center gap-2">
         <Image
-          src={sirenActive ? sirenOnImage : sirenOffImage} // Use the constant to determine the image source
+          src={sirenActive ? sirenOnImage : sirenOffImage}
           alt="Siren"
           className="w-10 h-10"
         />
         <div className='font-bold uppercase'>{name}</div>
-
       </div>
     </div>
   );

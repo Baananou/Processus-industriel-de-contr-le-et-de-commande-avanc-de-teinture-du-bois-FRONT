@@ -9,18 +9,19 @@ interface DisplayProps {
   variableLabel: string;
   variableId: string;
   name: string;
+  apiToken: any;
 }
 
-const Display: React.FC<DisplayProps> = ({ deviceLabel, variableLabel, variableId, name }) => {
+const Display: React.FC<DisplayProps> = ({ deviceLabel, variableLabel, variableId, name, apiToken }) => {
   const [value, setValue] = useState<number | null>(null);
-  const [sirenActive, setSirenActive] = useState<boolean>(false); // Initialize the constant
+  const [sirenActive, setSirenActive] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchValue = async () => {
       try {
         const response = await axios.get(`https://industrial.api.ubidots.com/api/v1.6/devices/${deviceLabel}/${variableLabel}/lv`, {
           headers: {
-            'X-Auth-Token': API_KEY,
+            'X-Auth-Token': apiToken,
             'Content-Type': 'application/json',
           },
         });
@@ -29,18 +30,14 @@ const Display: React.FC<DisplayProps> = ({ deviceLabel, variableLabel, variableI
         setValue(fetchedValue);
         console.log(response.data);
 
-        // Test the value and set the constant
         setSirenActive(fetchedValue === 1);
-
       } catch (error) {
         console.error('Error fetching variable value:', error);
       }
     };
 
     fetchValue();
-  }, [variableLabel]);
-
-  const API_KEY = process.env.UBIDOTS_API_TOKEN;
+  }, [variableLabel, apiToken]);
 
   return (
     <div>

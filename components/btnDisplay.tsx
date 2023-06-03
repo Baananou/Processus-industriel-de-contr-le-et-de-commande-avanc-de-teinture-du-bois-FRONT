@@ -6,9 +6,10 @@ interface BtnDisplayProps {
   variableLabel: string;
   variableId: string;
   name: string;
+  apiToken: any;
 }
 
-const BtnDisplay: React.FC<BtnDisplayProps> = ({ deviceLabel, variableLabel, variableId, name }) => {
+const BtnDisplay: React.FC<BtnDisplayProps> = ({ deviceLabel, variableLabel, variableId, name, apiToken }) => {
   const [value, setValue] = useState<number | null>(null);
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const BtnDisplay: React.FC<BtnDisplayProps> = ({ deviceLabel, variableLabel, var
           `https://industrial.api.ubidots.com/api/v1.6/variables/${variableId}/values`,
           {
             headers: {
-              'X-Auth-Token': API_KEY,
+              'X-Auth-Token': apiToken,
               'Content-Type': 'application/json',
             },
           }
@@ -32,9 +33,7 @@ const BtnDisplay: React.FC<BtnDisplayProps> = ({ deviceLabel, variableLabel, var
     };
 
     fetchValue();
-  }, [variableId]);
-
-  const API_KEY = process.env.UBIDOTS_API_TOKEN;
+  }, [variableId, apiToken]);
 
   return (
     <div>
