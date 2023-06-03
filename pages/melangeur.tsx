@@ -1,12 +1,87 @@
-import VariableData from "../components/VariableData";
-import VariableValue from "../components/VariableValue";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
+import Alert from "../components/alert";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+import sirenOnImage from '../public/siren_on.png';
+import sirenOffImage from '../public/siren_off.png';
+import axios from "axios";
+
 
 function Melangeur() {
+  const API_KEY = process.env.UBIDOTS_API_TOKEN;
+  const test = true;
+  const [variableValues, setVariableValues] = useState({});
+
+
 	return (
-		<Layout>
-			<section className="flex justify-center items-center">
+    <Layout>
+
+      <section className="flex justify-center items-center">
+        <section className="absolute right-10">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col items-center ">
+              <Alert
+                deviceLabel="pfe-sw-melangeur" // Example device label
+                variableLabel="f-p" // Example variable label
+                variableId={"6477d8f060526d000c43310b"} // Example variable ID
+                name={"Fin Production"}
+              />
+            </div>
+            <div className="flex flex-col items-center ">
+              <Alert
+                deviceLabel="pfe-sw-melangeur" // Example device label
+                variableLabel="s-c" // Example variable label
+                variableId={"6477d8f42f318a000da846da"} // Example variable ID
+                name={"Carte Scannée"}
+              />
+            </div>
+
+            <div className="flex flex-col items-center ">
+              <Alert
+                deviceLabel="pfe-sw-melangeur" // Example device label
+                variableLabel="m-e-c" // Example variable label
+                variableId={"6477d9177b06e4000b98f82b"} // Example variable ID
+                name={"Mélange en cours"}
+              />
+            </div>
+
+            <div className="flex flex-col items-center ">
+              <Alert
+                deviceLabel="pfe-sw-melangeur" // Example device label
+                variableLabel="v-e-c" // Example variable label
+                variableId={"6477d926e78fd0000c8a2627"} // Example variable ID
+                name={"Vidange en Cours"}
+              />
+            </div>
+            <div className="flex flex-col items-center ">
+              <Alert
+                deviceLabel="pfe-sw-melangeur" // Example device label
+                variableLabel="r-e-c" // Example variable label
+                variableId={"6477dba29767af000d6d5d20"} // Example variable ID
+                name={"Rinçage en Cours"}
+              />
+            </div>
+            <div className="flex flex-col items-center ">
+              <Alert
+                deviceLabel="pfe-sw-melangeur" // Example device label
+                variableLabel="pnet" // Example variable label
+                variableId={"642e8422f4412c0010238ef6"} // Example variable ID
+                name={"Etat Pompe Rincage"}
+              />
+            </div>
+            <div className="flex flex-col items-center ">
+              <Alert
+                deviceLabel="pfe-sw-melangeur" // Example device label
+                variableLabel="r-e-c" // Example variable label
+                variableId={"642e846bcc1876000ee2098f"} // Example variable ID
+                name={"Etat Electrovanne Arrivée eau"}
+              />
+            </div>
+          </div>
+
+        </section>
 			<section className="w-[1355px] h-[650px] flex justify-center items-center relative my-10 ">
 				<section className="pl-24">
 					<button className="absolute top-[90px] left-[455px] bg-blue-500 text-white px-4 py-2 rounded">
@@ -41,50 +116,7 @@ function Melangeur() {
 					/>
 				</section>
 
-				<section className="absolute right-10">
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
-						</div>
-						<div>test</div>
-					</div>
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
-						</div>
-						<div>test</div>
-					</div>
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
-						</div>
-						<div>test</div>
-					</div>
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
-						</div>
-						<div>test</div>
-					</div>
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
-						</div>
-						<div>test</div>
-					</div>
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
-						</div>
-						<div>test</div>
-					</div>
-					<div className="flex flex-col items-center">
-						<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-							<span className="text-white text-xl font-bold">!</span>
-						</div>
-						<div>test</div>
-					</div>
-				</section>
+
 				<section className="absolute left-10 bottom-10">
 					<div className="flex flex-col items-end gap-2">
 					<div className="flex items-center gap-2">
@@ -166,7 +198,7 @@ function Melangeur() {
 				</section>
 				{/* <section className="absolute left-10 top-10">
 					<div className="flex flex-col items-end gap-2">
-						
+
 					</div>
 				</section> */}
 			</section>

@@ -13,16 +13,15 @@ interface UbidotsResponse {
 // Modify these variables with your Ubidots credentials
 const API_KEY = process.env.UBIDOTS_API_TOKEN;
 // const DEVICE_LABEL = process.env.UBIDOTS_DEVICE_LABEL;
-const DEVICE_LABEL = "pfe";
 
-export function useDeviceVariableData(variableLabel: string) {
+export function useDeviceVariableData(variableId: string) {
 	const [variableData, setVariableData] = useState<UbidotsData[]>([]);
 
 	useEffect(() => {
 		async function fetchVariableData() {
 			try {
 				const response: AxiosResponse<UbidotsResponse> = await axios.get(
-					`https://industrial.api.ubidots.com/api/v1.6/devices/${DEVICE_LABEL}/${variableLabel}/values`,
+					`https://industrial.api.ubidots.com/api/v1.6/variables/${variableId}/values`,
 					{
 						headers: { "X-Auth-Token": API_KEY },
 					}
@@ -35,19 +34,19 @@ export function useDeviceVariableData(variableLabel: string) {
 		}
 
 		fetchVariableData();
-	}, [variableLabel]);
+	}, [variableId]);
 
 	return variableData;
 }
 
 export function usePostDeviceVariableValue() {
 	const postDeviceVariableValue = async (
-		variableLabel: string,
+		variableId: number,
 		value: number
 	): Promise<void> => {
 		try {
 			const response = await axios.post(
-				`https://industrial.api.ubidots.com/api/v1.6/devices/${DEVICE_LABEL}/${variableLabel}/values`,
+				`https://industrial.api.ubidots.com/api/v1.6/variables/${variableId}/values`,
 				{
 					value: value,
 				},
@@ -67,3 +66,4 @@ export function usePostDeviceVariableValue() {
 
 	return postDeviceVariableValue;
 }
+

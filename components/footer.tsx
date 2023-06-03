@@ -72,18 +72,19 @@ export default function Footer() {
 						<div className="text-sm text-blueGray-500 font-semibold py-1">
 							Copyright ©
 							<span id="get-current-year">{new Date().getFullYear()}</span>
-							<a
-								href="https://www.linkedin.com"
-								className="text-blueGray-500 hover:text-gray-800"
-								target="_blank"
-							>
-								{" "}
-								SAIF HAMDI / WIEM MZALI
-							</a>
+              <a
+                href="https://www.linkedin.com"
+                className="text-blueGray-500 hover:text-gray-800"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SAIF HAMDI / WIEM MZALI
+              </a>
+
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 		</footer>
 	);
