@@ -1,0 +1,1186 @@
+{
+    "count": 30,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b11ee6b6512000c0f5307",
+            "id": "647b11ee6b6512000c0f5307",
+            "label": "colorant-c",
+            "name": "Colorant-C",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "colorant-c"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T10:11:58.797415Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b11ee6b6512000c0f5307/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b11e6463df8000b2ddf89",
+            "id": "647b11e6463df8000b2ddf89",
+            "label": "colorant-b",
+            "name": "Colorant-B",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "colorant-b"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T10:11:50.559991Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b11e6463df8000b2ddf89/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b11d47a8606000df0ce6a",
+            "id": "647b11d47a8606000df0ce6a",
+            "label": "colorant-a",
+            "name": "Colorant-A",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "colorant-a"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T10:11:32.493653Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b11d47a8606000df0ce6a/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b11a6d3d802000e2d7f8a",
+            "id": "647b11a6d3d802000e2d7f8a",
+            "label": "raz",
+            "name": "RAZ",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "raz"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T10:10:46.253259Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b11a6d3d802000e2d7f8a/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b11a03b8a71000e2faad2",
+            "id": "647b11a03b8a71000e2faad2",
+            "label": "c2",
+            "name": "C2",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "c2"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T10:10:40.769777Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b11a03b8a71000e2faad2/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b1197d3d80204ed996610",
+            "id": "647b1197d3d80204ed996610",
+            "label": "c1",
+            "name": "C1",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "c1"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T10:10:31.153623Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b1197d3d80204ed996610/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b118ed3d80204ed99660f",
+            "id": "647b118ed3d80204ed99660f",
+            "label": "t3",
+            "name": "T3",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "t3"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T10:10:22.606738Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b118ed3d80204ed99660f/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b112c463df8000ca0b1d3",
+            "id": "647b112c463df8000ca0b1d3",
+            "label": "t2",
+            "name": "T2",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "t2"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T10:08:44.786798Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b112c463df8000ca0b1d3/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477dba29767af000d6d5d20",
+            "id": "6477dba29767af000d6d5d20",
+            "label": "r-e-c",
+            "name": "R-E-C",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "r-e-c"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:43:30.322354Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477dba29767af000d6d5d20/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477db4785d3a8000e164346",
+            "id": "6477db4785d3a8000e164346",
+            "label": "mfong",
+            "name": "MFONG",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "mfong"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:41:59.986444Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477db4785d3a8000e164346/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477db3bd9213a000cda6f45",
+            "id": "6477db3bd9213a000cda6f45",
+            "label": "mins",
+            "name": "MINS",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "mins"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:41:47.094818Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477db3bd9213a000cda6f45/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477db347b06e4000b98f82c",
+            "id": "6477db347b06e4000b98f82c",
+            "label": "mqp",
+            "name": "MQP",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "mqp"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:41:40.123415Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477db347b06e4000b98f82c/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477db2b5b684c000ebcf7f7",
+            "id": "6477db2b5b684c000ebcf7f7",
+            "label": "mvol",
+            "name": "MVOL",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "mvol"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:41:31.979699Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477db2b5b684c000ebcf7f7/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477db2149e3e8000f8448b0",
+            "id": "6477db2149e3e8000f8448b0",
+            "label": "ftf",
+            "name": "ftf",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "ftf"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:41:21.534810Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477db2149e3e8000f8448b0/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477db1960526d000c43310c",
+            "id": "6477db1960526d000c43310c",
+            "label": "fti",
+            "name": "fti",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "fti"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:41:13.826001Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477db1960526d000c43310c/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477db0ef0b688000b132208",
+            "id": "6477db0ef0b688000b132208",
+            "label": "c-ok",
+            "name": "C-OK",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "c-ok"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:41:02.315880Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477db0ef0b688000b132208/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477db057b06e4000d04e7f9",
+            "id": "6477db057b06e4000d04e7f9",
+            "label": "bpnm",
+            "name": "BPNM",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "bpnm"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:40:53.450349Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477db057b06e4000d04e7f9/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477d926e78fd0000c8a2627",
+            "id": "6477d926e78fd0000c8a2627",
+            "label": "v-e-c",
+            "name": "V-E-C",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "v-e-c"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:32:54.358984Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477d926e78fd0000c8a2627/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477d9177b06e4000b98f82b",
+            "id": "6477d9177b06e4000b98f82b",
+            "label": "m-e-c",
+            "name": "M-E-C",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "m-e-c"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:32:39.057039Z",
+            "lastValue": {
+                "value": 1.0,
+                "timestamp": 1685802029266,
+                "context": {},
+                "created_at": 1685802029266
+            },
+            "lastActivity": 1685802029269,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477d9177b06e4000b98f82b/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477d8f42f318a000da846da",
+            "id": "6477d8f42f318a000da846da",
+            "label": "s-c",
+            "name": "S-C",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "s-c"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:32:04.354781Z",
+            "lastValue": {
+                "value": 1.0,
+                "timestamp": 1685802030559,
+                "context": {},
+                "created_at": 1685802030559
+            },
+            "lastActivity": 1685802030566,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477d8f42f318a000da846da/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477d8f060526d000c43310b",
+            "id": "6477d8f060526d000c43310b",
+            "label": "f-p",
+            "name": "F-P",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "f-p"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:32:00.207732Z",
+            "lastValue": {
+                "value": 1.0,
+                "timestamp": 1685799065157,
+                "context": {},
+                "created_at": 1685799065157
+            },
+            "lastActivity": 1685799065168,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477d8f060526d000c43310b/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477d8dd9f1655000faa2d8b",
+            "id": "6477d8dd9f1655000faa2d8b",
+            "label": "vstt",
+            "name": "VSTT",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "vstt"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:31:41.676627Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477d8dd9f1655000faa2d8b/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477d8c19767af000fbb709f",
+            "id": "6477d8c19767af000fbb709f",
+            "label": "mml",
+            "name": "MML",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "mml"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:31:13.137355Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477d8c19767af000fbb709f/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477d86da6349f000f7c0722",
+            "id": "6477d86da6349f000f7c0722",
+            "label": "vcond",
+            "name": "VCOND",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "vcond"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:29:49.614369Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477d86da6349f000f7c0722/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6477d86949e3e8000e447d21",
+            "id": "6477d86949e3e8000e447d21",
+            "label": "veau",
+            "name": "VEAU",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "veau"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-05-31T23:29:45.701388Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6477d86949e3e8000e447d21/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6434104bc1a58375d6006c75",
+            "id": "6434104bc1a58375d6006c75",
+            "label": "vfong",
+            "name": "VFONG",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "vfong"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-04-10T13:34:03.914784Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6434104bc1a58375d6006c75/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6434100fbd7a30f23836e08a",
+            "id": "6434100fbd7a30f23836e08a",
+            "label": "vins",
+            "name": "VINS",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/64341000cc1876e3d1aa65b8",
+                "id": "64341000cc1876e3d1aa65b8",
+                "label": "pfe-sw-melangeur",
+                "name": "PFE-SW-MELANGEUR-Parte1",
+                "createdAt": "2023-04-10T13:32:48.154087Z"
+            },
+            "tags": [],
+            "properties": {
+                "_scale": 1000.0,
+                "_offset": 0.0,
+                "_previous_variable_label": "vins"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-04-10T13:33:03.644494Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6434100fbd7a30f23836e08a/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/6433ec0cc5d121a0fc8f77b6",
+            "id": "6433ec0cc5d121a0fc8f77b6",
+            "label": "mpqa",
+            "name": "T1",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/6433ebe92907d12fb14843c9",
+                "id": "6433ebe92907d12fb14843c9",
+                "label": "pfe-sw-melangeur-parte3",
+                "name": "PFE-SW-MELANGEUR-Parte3",
+                "createdAt": "2023-04-10T10:58:49.972968Z"
+            },
+            "tags": [],
+            "properties": {
+                "_scale": 99.0,
+                "_offset": 0.0,
+                "maximum_value": 99.0,
+                "minimum_value": 0.0,
+                "_previous_variable_label": "mpqa"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-04-10T10:59:24.838645Z",
+            "lastValue": {
+                "value": 99.0,
+                "timestamp": 1681131984472,
+                "context": {},
+                "created_at": 1681131984472
+            },
+            "lastActivity": 1681131984478,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/6433ec0cc5d121a0fc8f77b6/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/642e846bcc1876000ee2098f",
+            "id": "642e846bcc1876000ee2098f",
+            "label": "vnet",
+            "name": "VNET",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_previous_variable_label": "vnet"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-04-06T08:35:55.226889Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/642e846bcc1876000ee2098f/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/642e8422f4412c0010238ef6",
+            "id": "642e8422f4412c0010238ef6",
+            "label": "pnet",
+            "name": "PNET",
+            "description": "S1",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/642e840aaad607000da6c119",
+                "id": "642e840aaad607000da6c119",
+                "label": "pfe-sw-melangeur-parte2",
+                "name": "PFE-SW-Mélangeur-Parte2",
+                "createdAt": "2023-04-06T08:34:18.261756Z"
+            },
+            "tags": [],
+            "properties": {
+                "_scale": 1.0,
+                "_offset": 0.0,
+                "_previous_variable_label": "pnet"
+            },
+            "type": "raw",
+            "unit": "bool",
+            "syntheticExpression": "",
+            "createdAt": "2023-04-06T08:34:42.670184Z",
+            "lastValue": {
+                "value": 0.0,
+                "timestamp": 1680774528903,
+                "context": {},
+                "created_at": 1680774528903
+            },
+            "lastActivity": 1680774528910,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/642e8422f4412c0010238ef6/values"
+        }
+    ],
+
+    "count": 15,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b42c102f7ff3aa0589fb5",
+            "id": "647b42c102f7ff3aa0589fb5",
+            "label": "t4",
+            "name": "T4",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b40c6d3d80204ed996626",
+                "id": "647b40c6d3d80204ed996626",
+                "label": "colorant-partie-2",
+                "name": "colorant partie 2",
+                "createdAt": "2023-06-03T13:31:50.860203Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "t4"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:40:17.023152Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b42c102f7ff3aa0589fb5/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b42983b8a71000e2faae7",
+            "id": "647b42983b8a71000e2faae7",
+            "label": "t3",
+            "name": "T3",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b40c6d3d80204ed996626",
+                "id": "647b40c6d3d80204ed996626",
+                "label": "colorant-partie-2",
+                "name": "colorant partie 2",
+                "createdAt": "2023-06-03T13:31:50.860203Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "t3"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:39:36.949697Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b42983b8a71000e2faae7/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b4260fd4da2000e444bfd",
+            "id": "647b4260fd4da2000e444bfd",
+            "label": "new-variable-1",
+            "name": "MPQC",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b40c6d3d80204ed996626",
+                "id": "647b40c6d3d80204ed996626",
+                "label": "colorant-partie-2",
+                "name": "colorant partie 2",
+                "createdAt": "2023-06-03T13:31:50.860203Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "new-variable-1"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:38:40.045448Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b4260fd4da2000e444bfd/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b4186d3d80201bed84517",
+            "id": "647b4186d3d80201bed84517",
+            "label": "mpqb",
+            "name": "MPQB",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b40c6d3d80204ed996626",
+                "id": "647b40c6d3d80204ed996626",
+                "label": "colorant-partie-2",
+                "name": "colorant partie 2",
+                "createdAt": "2023-06-03T13:31:50.860203Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "mpqb"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:35:02.000710Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b4186d3d80201bed84517/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b40ebd3d80204ed996627",
+            "id": "647b40ebd3d80204ed996627",
+            "label": "new-variable",
+            "name": "MPQA",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b40c6d3d80204ed996626",
+                "id": "647b40c6d3d80204ed996626",
+                "label": "colorant-partie-2",
+                "name": "colorant partie 2",
+                "createdAt": "2023-06-03T13:31:50.860203Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "new-variable"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:32:27.114730Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b40ebd3d80204ed996627/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b4075bd02f4000dbe7ba6",
+            "id": "647b4075bd02f4000dbe7ba6",
+            "label": "mvolc",
+            "name": "MVOLC",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "mvolc"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:30:29.737637Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b4075bd02f4000dbe7ba6/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b4045ec7c05000eb357c1",
+            "id": "647b4045ec7c05000eb357c1",
+            "label": "vvcol",
+            "name": "VVCOL",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "vvcol"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:29:41.419351Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b4045ec7c05000eb357c1/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b40293b8a713a7b3565dd",
+            "id": "647b40293b8a713a7b3565dd",
+            "label": "n2",
+            "name": "N2",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "n2"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:29:13.085571Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b40293b8a713a7b3565dd/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b3fa26b651226eafbe84c",
+            "id": "647b3fa26b651226eafbe84c",
+            "label": "n1",
+            "name": "N1",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "n1"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:26:58.001695Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b3fa26b651226eafbe84c/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b3f80d3d80204ed996625",
+            "id": "647b3f80d3d80204ed996625",
+            "label": "n0",
+            "name": "N0",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "n0"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:26:24.299597Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b3f80d3d80204ed996625/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b3f3ad3d80204ed996624",
+            "id": "647b3f3ad3d80204ed996624",
+            "label": "vceau",
+            "name": "VCEAU",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "vceau"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:25:14.259467Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b3f3ad3d80204ed996624/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b3f18fd4da2000d58d406",
+            "id": "647b3f18fd4da2000d58d406",
+            "label": "pcc",
+            "name": "PCC",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "pcc"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:24:40.511270Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b3f18fd4da2000d58d406/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b3efdfd4da2000e444bfb",
+            "id": "647b3efdfd4da2000e444bfb",
+            "label": "pcb",
+            "name": "PCB",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "pcb"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:24:13.701309Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b3efdfd4da2000e444bfb/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b3ed6ec7c05000d9768f8",
+            "id": "647b3ed6ec7c05000d9768f8",
+            "label": "pca",
+            "name": "PCA",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "pca"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:23:34.881619Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b3ed6ec7c05000d9768f8/values"
+        },
+        {
+            "url": "https://industrial.api.ubidots.com/api/v2.0/variables/647b3e257a8606000bda5cea",
+            "id": "647b3e257a8606000bda5cea",
+            "label": "mcol",
+            "name": "MCOL",
+            "description": "",
+            "device": {
+                "url": "https://industrial.api.ubidots.com/api/v2.0/devices/647b3e10bd02f4000c6d2871",
+                "id": "647b3e10bd02f4000c6d2871",
+                "label": "colorant-partie1",
+                "name": "colorant partie 1",
+                "createdAt": "2023-06-03T13:20:16.421826Z"
+            },
+            "tags": [],
+            "properties": {
+                "_color": "#f47373",
+                "_previous_variable_label": "mcol"
+            },
+            "type": "raw",
+            "unit": null,
+            "syntheticExpression": "",
+            "createdAt": "2023-06-03T13:20:37.390836Z",
+            "lastValue": {},
+            "lastActivity": null,
+            "valuesUrl": "https://industrial.api.ubidots.com/api/v1.6/variables/647b3e257a8606000bda5cea/values"
+        }
+    ]
+}
