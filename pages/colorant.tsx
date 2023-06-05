@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
+import BtnDisplay from "../components/btnDisplay";
+import Input from "../components/input";
+import Display from "../components/display";
 
 
 type Props = {};
@@ -11,25 +14,51 @@ const Colorant = (props: Props) => {
       <section className="flex justify-center items-center">
         <section className="w-[1355px] h-[650px] flex justify-center items-center relative my-10 ">
           <section className="pl-24">
-            <button className="absolute top-[15px] left-[655px] bg-blue-500 text-white font-bold py-2 px-4 rounded">
-              Display Button
-            </button>
-            <button className="absolute top-[80px] left-[325px] bg-blue-500 text-white font-bold py-2 px-4 rounded">
-              Display Button
-            </button>
-            <button className="absolute top-[160px] left-[325px] bg-blue-500 text-white font-bold py-2 px-4 rounded">
-              Display Button
-            </button>
-            <button className="absolute top-[80px] right-[230px] bg-blue-500 text-white font-bold py-2 px-4 rounded">
-              Display Button
-            </button>
-            <button className="absolute top-[150px] right-[245px] bg-blue-500 text-white font-bold py-2 px-4 rounded">
-              Display Button
-            </button>
+            <div className="absolute top-[15px] left-[635px]">
+              <Display
+                deviceLabel="colorant-partie1"
+                variableLabel="mcol"
+                variableId={"647b3e257a8606000bda5cea"}
+                name={"Moteur de l'agitateur"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+            </div>
+            <div className="absolute top-[80px] left-[280px]">
+              <Display
+                deviceLabel="colorant-partie1"
+                variableLabel="pcb"
+                variableId={"647b3efdfd4da2000e444bfb"}
+                name={"Pompe de Colorant B"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+            </div>
+            <div className="absolute top-[160px] left-[280px]">
+              <Display
+                deviceLabel="colorant-partie1"
+                variableLabel="pca"
+                variableId={"647b3ed6ec7c05000d9768f8"}
+                name={"Pompe de Colorant A"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+            </div>
+            <div className="absolute top-[80px] right-[185px]">
+              <Display
+                deviceLabel="colorant-partie1"
+                variableLabel="pcc"
+                variableId={"647b3f18fd4da2000d58d406"}
+                name={"Pompe de Colorant C"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+            </div>
+            <div className="absolute top-[150px] right-[270px]">
+              <Display
+                deviceLabel="colorant-partie1"
+                variableLabel="vceau"
+                variableId={"647b3f3ad3d80204ed996624"}
+                name={"Arrivé d'eau "} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+            </div>
 
-            <button className="absolute -bottom-[10px] left-[655px] bg-blue-500 text-white font-bold py-2 px-4 rounded">
-              Display Button
-            </button>
+            <div className="absolute -bottom-[10px] left-[600px]">
+              <Display
+                deviceLabel="colorant-partie1"
+                variableLabel="vvcol"
+                variableId={"647b4045ec7c05000eb357c1"}
+                name={"Vidange De la Cuve de clorants"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+            </div>
+
+
 
             <Image
               src={"/colorant.png"}
@@ -42,62 +71,66 @@ const Colorant = (props: Props) => {
           <section className="absolute left-10 bottom-10">
             <div className="flex flex-col items-end gap-2">
               <div className="flex items-center gap-2">
-                <label htmlFor="">TC1</label>
-                <button className="bg-blue-500 text-white px-4 py-2 w-24 rounded">
-                  TC1
-                </button>
+                <BtnDisplay
+                  deviceLabel="colorant-partie-2"
+                  variableLabel="t1c"
+                  variableId={"647b42983b8a71000e2faae7"}
+                  name={"TC1"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
               </div>
               <div className="flex items-center gap-2">
-                <label htmlFor="">TC2</label>
-                <button className="bg-blue-500 text-white px-4 py-2 w-24 rounded">
-                  TC2
-                </button>
+                <BtnDisplay
+                  deviceLabel="colorant-partie-2"
+                  variableLabel="t2c"
+                  variableId={"647b42c102f7ff3aa0589fb5"}
+                  name={"TC2"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
               </div>
               <div className="flex items-center gap-2">
-                <label htmlFor="">MPQA</label>
-                <input
-                  type="text"
-                  className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="Entrer valeur"
-                />
+                <Input
+                  deviceLabel="colorant-partie-2"
+                  variableLabel="mpqa"
+                  variableId={"647b40ebd3d80204ed996627"}
+                  name={"mpqa"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
               </div>
               <div className="flex items-center gap-2">
-                <label htmlFor="">MPQB</label>
-                <input
-                  type="text"
-                  className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="Entrer valeur"
-                />
+                <Input
+                  deviceLabel="colorant-partie-2"
+                  variableLabel="mpqb"
+                  variableId={"647b4186d3d80201bed84517"}
+                  name={"mpqb"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
               </div>
               <div className="flex items-center gap-2">
-                <label htmlFor="">MPQC</label>
-                <input
-                  type="text"
-                  className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="Entrer valeur"
-                />
+                <Input
+                  deviceLabel="colorant-partie-2"
+                  variableLabel="mpqc"
+                  variableId={"647b4260fd4da2000e444bfd"}
+                  name={"mpqc"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
               </div>
               <div className="flex items-center gap-2">
-                <label htmlFor="">MVOLC</label>
-                <input
-                  type="text"
-                  className="border border-gray-300 px-4 py-2 w-24 rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="Entrer valeur"
-                />
+                <Input
+                  deviceLabel="colorant-partie-1"
+                  variableLabel="mvolc"
+                  variableId={"647b4075bd02f4000dbe7ba6"}
+                  name={"mvolc"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
               </div>
             </div>
           </section>
           <section className="absolute right-10">
             <div className="flex flex-col items-center gap-2">
-              <button className=" bg-blue-500 text-white font-bold py-2 px-4 w-24 rounded">
-                N0
-              </button>
-              <button className=" bg-blue-500 text-white font-bold py-2 px-4 w-24 rounded">
-                N1
-              </button>
-              <button className=" bg-blue-500 text-white font-bold py-2 px-4 w-24 rounded">
-                N2
-              </button>
+              <BtnDisplay
+                deviceLabel="colorant-partie1"
+                variableLabel="n0"
+                variableId={"647b3f80d3d80204ed996625"}
+                name={"N0"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+              <BtnDisplay
+                deviceLabel="colorant-partie1"
+                variableLabel="n1"
+                variableId={"647b3e10bd02f4000c6d2871"}
+                name={"N1"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+              <BtnDisplay
+                deviceLabel="colorant-partie1"
+                variableLabel="n2"
+                variableId={"647b40293b8a713a7b3565dd"}
+                name={"N2"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
             </div>
           </section>
         </section>
