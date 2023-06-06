@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import BtnDisplay from "../components/btnDisplay";
 import Input from "../components/input";
 import Display from "../components/display";
+import Btn from "../components/btn";
 
 
 type Props = {};
@@ -72,7 +73,7 @@ const Colorant = (props: Props) => {
             <div className="flex flex-col items-end gap-2">
               <div className="flex items-center gap-2">
                 <BtnDisplay
-                  deviceLabel="colorant-partie-2"
+                  deviceLabel="colorant-partie-2x"
                   variableLabel="t1c"
                   variableId={"647b42983b8a71000e2faae7"}
                   name={"TC1"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
@@ -116,17 +117,17 @@ const Colorant = (props: Props) => {
           </section>
           <section className="absolute right-10">
             <div className="flex flex-col items-center gap-2">
-              <BtnDisplay
+              <Btn
                 deviceLabel="colorant-partie1"
                 variableLabel="n0"
                 variableId={"647b3f80d3d80204ed996625"}
                 name={"N0"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
-              <BtnDisplay
+              <Btn
                 deviceLabel="colorant-partie1"
                 variableLabel="n1"
-                variableId={"647b3e10bd02f4000c6d2871"}
+                variableId={"647b3fa26b651226eafbe84c"}
                 name={"N1"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
-              <BtnDisplay
+              <Btn
                 deviceLabel="colorant-partie1"
                 variableLabel="n2"
                 variableId={"647b40293b8a713a7b3565dd"}
