@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
+import UserDisplay from '../components/userDisplay';
+import UserAlert from "../components/userAlert";
+
 
 
 type Props = {};
@@ -13,49 +16,48 @@ const Accuser = (props: Props) => {
 					<div className="flex flex-col gap-2 lg:bg-secondary md:bg-secondary p-24 items-end">
 						<div className="flex items-center gap-2">
 							<label htmlFor="">Nom :</label>
-							<button className="bg-blue-500 text-white px-4 py-2 w-24 rounded">
-								Nom
-							</button>
+              <UserDisplay child="READ" alertKey="nom" />
 						</div>
 						<div className="flex items-center gap-2">
 							<label htmlFor="">Prenom :</label>
-							<button className="bg-blue-500 text-white px-4 py-2 w-24 rounded">
-								Prenom
-							</button>
+              <UserDisplay child="READ" alertKey="prenom" />
+
 						</div>
 						<div className="flex items-center gap-2">
 							<label htmlFor="">Poste :</label>
-							<button className="bg-blue-500 text-white px-4 py-2 w-24 rounded">
-								Poste
-							</button>
+              <UserDisplay child="READ" alertKey="poste" />
+
 						</div>
 						<div className="flex items-center gap-2">
 							<label htmlFor="">Matricule :</label>
-							<button className="bg-blue-500 text-white px-4 py-2 w-24 rounded">
-								Matricule
-							</button>
+              <UserDisplay child="READ" alertKey="matricule" />
+
 						</div>
 					</div>
-					<section className="absolute right-10">
-						<div className="flex flex-col items-center">
-							<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-								<span className="text-white text-xl font-bold">!</span>
-							</div>
-							<div>test</div>
-						</div>
-						<div className="flex flex-col items-center">
-							<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-								<span className="text-white text-xl font-bold">!</span>
-							</div>
-							<div>test</div>
-						</div>
-						<div className="flex flex-col items-center">
-							<div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
-								<span className="text-white text-xl font-bold">!</span>
-							</div>
-							<div>test</div>
-						</div>
-					</section>
+          <section className="absolute right-10">
+            <div className="flex flex-col gap-8">
+              <div className="flex flex-col items-center ">
+                <UserAlert
+                  child="READ"
+                  alertKey="done"
+                />
+              </div>
+              <div className="flex flex-col items-center ">
+                <UserAlert
+                  child="READ"
+                  alertKey="error"
+                />
+              </div>
+
+              <div className="flex flex-col items-center ">
+                <UserAlert
+                  child="READ"
+                  alertKey="presence"
+                />
+              </div>
+            </div>
+
+          </section>
 				</section>
 			</section>
 		</Layout>

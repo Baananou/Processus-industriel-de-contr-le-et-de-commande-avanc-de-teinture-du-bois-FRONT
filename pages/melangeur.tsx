@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Alert from "../components/alert";
+import MelangeurAlert from "../components/melangeurAlert";
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -7,74 +7,64 @@ import { useEffect, useState } from "react";
 import sirenOnImage from '../public/siren_on.png';
 import sirenOffImage from '../public/siren_off.png';
 import axios from "axios";
-import Display from "../components/display";
+import Display from "../components/userDisplay";
 import Btn from "../components/btn";
 import Input from "../components/input";
 import BtnDisplay from "../components/btnDisplay";
+import MelangeurInput from "../components/melangeurInput";
 
 
 function Melangeur() {
-  const API_KEY = process.env.UBIDOTS_API_TOKEN1;
-  const test = true;
-  const [variableValues, setVariableValues] = useState({});
-
 
   return (
     <Layout>
 
       <section className="flex justify-center items-center">
         <section className="absolute right-10">
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-8">
             <div className="flex flex-col items-center ">
-              <Alert
-                deviceLabel="pfe-sw-melangeur"
-                variableLabel="f-p"
-                variableId={"6477d8f060526d000c43310b"}
-                name={"Fin Production"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+              <MelangeurAlert
+                child="output"
+                alertKey="FP"
+              />
             </div>
             <div className="flex flex-col items-center ">
-              <Alert
-                deviceLabel="pfe-sw-melangeur"
-                variableLabel="s-c"
-                variableId={"6477d8f42f318a000da846da"}
-                name={"Carte Scannée"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+              <MelangeurAlert
+                child="output"
+                alertKey="SC"
+              />
             </div>
 
             <div className="flex flex-col items-center ">
-              <Alert
-                deviceLabel="pfe-sw-melangeur"
-                variableLabel="m-e-c"
-                variableId={"6477d9177b06e4000b98f82b"}
-                name={"Mélange en cours"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+              <MelangeurAlert
+                child="output"
+                alertKey="MEC"
+              />
             </div>
 
             <div className="flex flex-col items-center ">
-              <Alert
-                deviceLabel="pfe-sw-melangeur"
-                variableLabel="v-e-c"
-                variableId={"6477d926e78fd0000c8a2627"}
-                name={"Vidange en Cours"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+              <MelangeurAlert
+                child="output"
+                alertKey="VEC"
+              />
             </div>
             <div className="flex flex-col items-center ">
-              <Alert
-                deviceLabel="pfe-sw-melangeur-parte2"
-                variableLabel="r-e-c"
-                variableId={"6477dba29767af000d6d5d20"}
-                name={"Rinçage en Cours"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+              <MelangeurAlert
+                child="output"
+                alertKey="REC"
+              />
             </div>
             <div className="flex flex-col items-center ">
-              <Alert
-                deviceLabel="pfe-sw-melangeur-parte2"
-                variableLabel="pnet"
-                variableId={"642e8422f4412c0010238ef6"}
-                name={"Etat Pompe Rincage"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+              <MelangeurAlert
+                child="output"
+                alertKey="PNET"
+              />
             </div>
             <div className="flex flex-col items-center ">
-              <Alert
-                deviceLabel="pfe-sw-melangeur"
-                variableLabel="vnet"
-                variableId={"642e846bcc1876000ee2098f"}
-                name={"Etat Electrovanne Arrivée"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+              <MelangeurAlert
+                child="output"
+                alertKey="VNET"
+              />
             </div>
 
           </div>
@@ -115,37 +105,17 @@ function Melangeur() {
               variableId={"647b118ed3d80204ed99660f"}
               name={"T3"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
 
-            <Input
-              deviceLabel="pfe-sw-melangeur-parte2"
-              variableLabel="mvol"
-              variableId={"6477db2b5b684c000ebcf7f7"}
-              name={"Volume Mélange"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
-            <Input
-              deviceLabel="pfe-sw-melangeur-parte2"
-              variableLabel="mqp"
-              variableId={"6477db347b06e4000b98f82c"}
-              name={"Volume Produit"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
-            <Input
-              deviceLabel="pfe-sw-melangeur-parte2"
-              variableLabel="mins"
-              variableId={"6477db3bd9213a000cda6f45"}
-              name={"Volume Insecticide"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
-            <Input
-              deviceLabel="pfe-sw-melangeur-parte2"
-              variableLabel="mfong"
-              variableId={"6477db4785d3a8000e164346"}
-              name={"Volume Fongicide "} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+            <MelangeurInput child="input" inputkey="MVOL" />
 
+            <MelangeurInput child="input" inputkey="MQP" />
+            <MelangeurInput child="input" inputkey="MINS" />
+            <MelangeurInput child="input" inputkey="MFONG" />
             <Btn
               deviceLabel="pfe-sw-melangeur-parte2"
               variableLabel="bpnm"
               variableId={"6477db057b06e4000d04e7f9"}
               name={"Nouveau Mélange"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
-            <Btn
-              deviceLabel="pfe-sw-melangeur-parte2"
-              variableLabel="c-ok"
-              variableId={"6477db0ef0b688000b132208"}
-              name={"Carte-OK"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+            <MelangeurInput child="input" inputkey="COK" />
 
           </div>
         </section>
@@ -169,50 +139,50 @@ function Melangeur() {
             </div>
 
             <div className="absolute top-[183px] left-[258px]">
-              <Display
+              {/* <Display
                 deviceLabel="pfe-sw-melangeur"
                 variableLabel="vfong"
                 variableId={"6434104bc1a58375d6006c75"}
-                name={"Etat EV Fongicide"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+                name={"Etat EV Fongicide"} apiToken={process.env.UBIDOTS_API_TOKEN1} /> */}
             </div>
             <div className="absolute top-[123px] left-[250px]">
-              <Display
+              {/* <Display
                 deviceLabel="pfe-sw-melangeur"
                 variableLabel="vins"
                 variableId={"6434100fbd7a30f23836e08a"}
-                name={"Etat EV Insecticide"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+                name={"Etat EV Insecticide"} apiToken={process.env.UBIDOTS_API_TOKEN1} /> */}
             </div>
 
             <div className="absolute top-[123px] right-[205px]">
-              <Display
+              {/* <Display
                 deviceLabel="pfe-sw-melangeur"
                 variableLabel="veau"
                 variableId={"6477d86949e3e8000e447d21"}
-                name={"Etat EV Eau"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+                name={"Etat EV Eau"} apiToken={process.env.UBIDOTS_API_TOKEN1} /> */}
             </div>
 
             <div className="absolute bottom-[65px] left-[270px]">
-              <Display
+              {/* <Display
                 deviceLabel="pfe-sw-melangeur"
                 variableLabel="vstt"
                 variableId={"6477d8dd9f1655000faa2d8b"}
-                name={"Vidange Vers Station Eau"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+                name={"Vidange Vers Station Eau"} apiToken={process.env.UBIDOTS_API_TOKEN1} /> */}
             </div>
 
             <div className="absolute bottom-[30px] left-[620px]">
-              <Display
+              {/* <Display
                 deviceLabel="pfe-sw-melangeur"
                 variableLabel="mml"
                 variableId={"6477d8c19767af000fbb709f"}
-                name={"Etat Moteur"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+                name={"Etat Moteur"} apiToken={process.env.UBIDOTS_API_TOKEN1} /> */}
             </div>
 
             <div className="absolute bottom-[65px] right-[300px]">
-              <Display
+              {/* <Display
                 deviceLabel="pfe-sw-melangeur"
                 variableLabel="vcond"
                 variableId={"6477d86da6349f000f7c0722"}
-                name={"Vidange vers Atelier"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
+                name={"Vidange vers Atelier"} apiToken={process.env.UBIDOTS_API_TOKEN1} /> */}
             </div>
             <Image
               src={"/melangeur.png"}

@@ -3,8 +3,9 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import BtnDisplay from "../components/btnDisplay";
 import Input from "../components/input";
-import Display from "../components/display";
+import Display from "../components/userDisplay";
 import Btn from "../components/btn";
+import ColorantInput from "../components/colorantInput";
 
 
 type Props = {};
@@ -16,47 +17,47 @@ const Colorant = (props: Props) => {
         <section className="w-[1355px] h-[650px] flex justify-center items-center relative my-10 ">
           <section className="pl-24">
             <div className="absolute top-[15px] left-[635px]">
-              <Display
+              {/* <Display
                 deviceLabel="colorant-partie1"
                 variableLabel="mcol"
                 variableId={"647b3e257a8606000bda5cea"}
-                name={"Moteur de l'agitateur"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                name={"Moteur de l'agitateur"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
             </div>
             <div className="absolute top-[80px] left-[280px]">
-              <Display
+              {/* <Display
                 deviceLabel="colorant-partie1"
                 variableLabel="pcb"
                 variableId={"647b3efdfd4da2000e444bfb"}
-                name={"Pompe de Colorant B"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                name={"Pompe de Colorant B"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
             </div>
             <div className="absolute top-[160px] left-[280px]">
-              <Display
+              {/* <Display
                 deviceLabel="colorant-partie1"
                 variableLabel="pca"
                 variableId={"647b3ed6ec7c05000d9768f8"}
-                name={"Pompe de Colorant A"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                name={"Pompe de Colorant A"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
             </div>
             <div className="absolute top-[80px] right-[185px]">
-              <Display
+              {/* <Display
                 deviceLabel="colorant-partie1"
                 variableLabel="pcc"
                 variableId={"647b3f18fd4da2000d58d406"}
-                name={"Pompe de Colorant C"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                name={"Pompe de Colorant C"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
             </div>
             <div className="absolute top-[150px] right-[270px]">
-              <Display
+              {/* <Display
                 deviceLabel="colorant-partie1"
                 variableLabel="vceau"
                 variableId={"647b3f3ad3d80204ed996624"}
-                name={"Arrivé d'eau "} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                name={"Arrivé d'eau "} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
             </div>
 
             <div className="absolute -bottom-[10px] left-[600px]">
-              <Display
+              {/* <Display
                 deviceLabel="colorant-partie1"
                 variableLabel="vvcol"
                 variableId={"647b4045ec7c05000eb357c1"}
-                name={"Vidange De la Cuve de clorants"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                name={"Vidange De la Cuve de clorants"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
             </div>
 
 
@@ -86,32 +87,19 @@ const Colorant = (props: Props) => {
                   name={"TC2"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
               </div>
               <div className="flex items-center gap-2">
-                <Input
-                  deviceLabel="colorant-partie-2"
-                  variableLabel="mpqa"
-                  variableId={"647b40ebd3d80204ed996627"}
-                  name={"mpqa"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                <ColorantInput child="input" inputkey="MPQA" />
               </div>
               <div className="flex items-center gap-2">
-                <Input
-                  deviceLabel="colorant-partie-2"
-                  variableLabel="mpqb"
-                  variableId={"647b4186d3d80201bed84517"}
-                  name={"mpqb"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                <ColorantInput child="input" inputkey="MPQB" />
+
               </div>
               <div className="flex items-center gap-2">
-                <Input
-                  deviceLabel="colorant-partie-2"
-                  variableLabel="mpqc"
-                  variableId={"647b4260fd4da2000e444bfd"}
-                  name={"mpqc"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                <ColorantInput child="input" inputkey="MPQC" />
+
               </div>
               <div className="flex items-center gap-2">
-                <Input
-                  deviceLabel="colorant-partie-1"
-                  variableLabel="mvolc"
-                  variableId={"647b4075bd02f4000dbe7ba6"}
-                  name={"mvolc"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                <ColorantInput child="input" inputkey="MVOLC" />
+
               </div>
             </div>
           </section>
