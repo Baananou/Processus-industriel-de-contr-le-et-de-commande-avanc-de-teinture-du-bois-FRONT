@@ -1,12 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Image from "next/image";
-import InputColor from "../components/inputColor";
 import RecetteInput from "../components/recetteInput";
 
-type Props = {};
 
-const Recette = (props: Props) => {
+function Recette() {
   return (
     <Layout>
       <section className="flex justify-center items-center">
@@ -15,7 +12,6 @@ const Recette = (props: Props) => {
             <div className="flex flex-col lg:flex-row md:flex-row lg:gap-16 gap-2 ">
               <RecetteInput child="input" inputkey="COLORANT1" />
               <RecetteInput child="input" inputkey="COLORANT2" />
-
               <RecetteInput child="input" inputkey="COLORANT3" />
 
             </div>

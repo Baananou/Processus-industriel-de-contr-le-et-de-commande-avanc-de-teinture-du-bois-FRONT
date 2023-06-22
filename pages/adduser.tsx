@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 import UserAlert from "../components/userAlert";
 import UserInput from "../components/userInput";
+import UserBtn from "../components/userBtn";
 
 
 function Adduser() {
@@ -30,15 +31,9 @@ function Adduser() {
                 </div>
                 <div className="mb-4">
                   <UserInput inputKey="matricule" child="WRITE" />
-
                 </div>
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                >
-                  Write
-                </button>
               </form>
+              <UserBtn inputKey="W" child="write" />
             </div>
           </div>
           <section className="absolute right-10">

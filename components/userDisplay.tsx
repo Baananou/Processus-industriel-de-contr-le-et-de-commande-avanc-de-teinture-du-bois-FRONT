@@ -56,14 +56,6 @@ const UserDisplay: React.FC<UserDisplayProps> = ({ child, alertKey }) => {
           {userData[child]?.[alertKey]}
         </button>
       </div>
-      {/* <div className="h-10 flex flex-col items-center justify-center gap-2">
-        <Image
-          src={userData[child]?.[alertKey] ? sirenOnImage : sirenOffImage}
-          alt="Siren"
-          className="w-10 h-10"
-        />
-        <div className="font-bold uppercase">{[alertKey]}</div>
-      </div> */}
     </div>
   );
 };

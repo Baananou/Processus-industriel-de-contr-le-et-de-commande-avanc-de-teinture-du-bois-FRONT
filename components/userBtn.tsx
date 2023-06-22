@@ -1,49 +1,63 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
-interface InputFieldProps {
-  child: "input" | "output";
-  key: string;
-  jsonData: {
-    input: Record<string, any>;
-    output: Record<string, any>;
-  };
+interface UserBtnProps {
+  inputKey: string;
+  child: string;
 }
 
-const UserBtn: React.FC<InputFieldProps> = ({ child, key, jsonData }) => {
-  const [value, setValue] = useState(jsonData[child][key]);
+const UserBtn: React.FC<UserBtnProps> = ({ inputKey, child }) => {
+  const [value, setValue] = useState<string>("true");
+
+  useEffect(() => {
+    fetchUserValue();
+  }, []);
+
+  const fetchUserValue = () => {
+    // Send GET request to fetch the current value from the server
+    fetch(`http://127.0.0.1:8080/user?${child}=${inputKey}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch value");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setValue(data.value.toString()); // Convert the fetched value to a string
+        console.log('====================================');
+        console.log(data);
+        console.log('====================================');
+      })
+      .catch((error) => {
+        toast.error("Failed to fetch value");
+        console.error(error);
+      });
+  };
 
   const handleClick = () => {
-    const currentValue = jsonData[child][key];
-    const updatedValue = currentValue === true || currentValue === "1" ? false : true;
+    const updatedValue = value === "true" ? "false" : "true"; // Toggle the value
 
-    // Update the value in the JSON data
-    const updatedData = {
-      ...jsonData,
-      [child]: {
-        ...jsonData[child],
-        [key]: updatedValue,
-      },
-    };
-
-    // Send POST request
+    // Send POST request to update the value
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(updatedData),
+      body: JSON.stringify({
+        key: inputKey,
+        value: updatedValue,
+        child: child,
+      }),
     };
 
-    fetch("http://127.0.0.1:8080/melangeur", requestOptions)
+    fetch("http://127.0.0.1:8080/user", requestOptions)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to update value");
         }
         return response.json();
       })
-      .then((data) => {
+      .then(() => {
         toast.success("Value updated successfully");
-        setValue(updatedValue);
-        console.log(data);
+        setValue(updatedValue); // Update the local state with the updated value
       })
       .catch((error) => {
         toast.error("Failed to update value");
@@ -53,9 +67,14 @@ const UserBtn: React.FC<InputFieldProps> = ({ child, key, jsonData }) => {
 
   return (
     <div>
-      <button onClick={handleClick} className="border px-4 py-2 rounded-md focus:outline-none focus:border-primary">
-        {value === true || value === "1" ? "0" : "1"}
-      </button>
+      <div className="flex flex-col items-center justify-center gap-2">
+        <button
+          className={value === "true" ? "w-52 h-8 bg-blue-500 text-white font-bold py-2 px-4 rounded" : "bg-black text-white font-bold py-2 px-4 rounded w-52 h-8"}
+          onClick={handleClick}
+        >
+          {child} - {inputKey}
+        </button>
+      </div>
     </div>
   );
 };

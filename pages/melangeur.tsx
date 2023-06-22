@@ -1,13 +1,6 @@
 import Layout from "../components/Layout";
 import MelangeurAlert from "../components/melangeurAlert";
-
 import Image from "next/image";
-import { useEffect, useState } from "react";
-
-import sirenOnImage from '../public/siren_on.png';
-import sirenOffImage from '../public/siren_off.png';
-import axios from "axios";
-import Display from "../components/userDisplay";
 import Btn from "../components/btn";
 import Input from "../components/input";
 import BtnDisplay from "../components/btnDisplay";
@@ -106,7 +99,6 @@ function Melangeur() {
               name={"T3"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
 
             <MelangeurInput child="input" inputkey="MVOL" />
-
             <MelangeurInput child="input" inputkey="MQP" />
             <MelangeurInput child="input" inputkey="MINS" />
             <MelangeurInput child="input" inputkey="MFONG" />
@@ -115,7 +107,11 @@ function Melangeur() {
               variableLabel="bpnm"
               variableId={"6477db057b06e4000d04e7f9"}
               name={"Nouveau Mélange"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
-            <MelangeurInput child="input" inputkey="COK" />
+            <Btn
+              deviceLabel="pfe-sw-melangeur-parte2"
+              variableLabel="C-ok"
+              variableId={"6477db057b06e4000d04e7f9"}
+              name={"C-OK"} apiToken={process.env.UBIDOTS_API_TOKEN1} />
 
           </div>
         </section>
