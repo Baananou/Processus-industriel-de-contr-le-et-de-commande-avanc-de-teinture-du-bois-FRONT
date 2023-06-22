@@ -8,10 +8,10 @@ interface RecetteInputProps {
 }
 
 const RecetteInput: React.FC<RecetteInputProps> = ({ child, inputkey }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState<number | undefined>(undefined);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const inputValue = e.target.value;
+    const inputValue = parseInt(e.target.value, 10);
     setValue(inputValue);
 
     // Send POST request
@@ -39,7 +39,7 @@ const RecetteInput: React.FC<RecetteInputProps> = ({ child, inputkey }) => {
         {inputkey}:
       </label>
       <input
-        type="text"
+        type="number"
         value={value}
         onChange={handleChange}
         className="border px-4 py-2 rounded-md focus:outline-none focus:border-primary bg-white w-56 mx-2"
