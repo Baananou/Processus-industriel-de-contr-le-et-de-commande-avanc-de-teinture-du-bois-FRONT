@@ -20,7 +20,7 @@ const UserInput: React.FC<InputFieldProps> = ({ inputKey, child }) => {
       body: JSON.stringify({
         key: inputKey,
         value: inputValue,
-        read_or_write: child,
+        child: child,
       }),
     };
 

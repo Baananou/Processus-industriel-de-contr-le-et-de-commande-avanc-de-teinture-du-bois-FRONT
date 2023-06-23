@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
-import UserDisplay from '../components/userDisplay';
+import UserDisplay from '../components/user/userDisplay';
 import UserAlert from "../components/user/userAlert";
 
 

@@ -1,6 +1,6 @@
 import { useQuery, useQueryClient, QueryClient } from "react-query";
 import { toast } from "react-toastify";
-import axiosClient from "../axiosClient";
+import axiosClient from "../../axiosClient";
 import Image from "next/image";
 import sirenOnImage from "../public/siren_on.png";
 import sirenOffImage from "../public/siren_off.png";

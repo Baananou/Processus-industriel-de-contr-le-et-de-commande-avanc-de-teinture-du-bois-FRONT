@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 
-interface MelangeurBtnProps {
+interface ColorantBtnProps {
   inputKey: string;
   child: string;
 }
 
-const MelangeurBtn: React.FC<MelangeurBtnProps> = ({ inputKey, child }) => {
+const ColorantBtn: React.FC<ColorantBtnProps> = ({ inputKey, child }) => {
   const [value, setValue] = useState<string>("true");
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const MelangeurBtn: React.FC<MelangeurBtnProps> = ({ inputKey, child }) => {
 
   const fetchUserValue = () => {
     // Send GET request to fetch the current value from the server
-    fetch(`http://127.0.0.1:8080/melangeur?${child}=${inputKey}`)
+    fetch(`http://127.0.0.1:8080/colorant?${child}=${inputKey}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch value");
@@ -45,7 +45,7 @@ const MelangeurBtn: React.FC<MelangeurBtnProps> = ({ inputKey, child }) => {
       }),
     };
 
-    fetch("http://127.0.0.1:8080/melangeur", requestOptions)
+    fetch("http://127.0.0.1:8080/colorant", requestOptions)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to update value");
@@ -76,4 +76,4 @@ const MelangeurBtn: React.FC<MelangeurBtnProps> = ({ inputKey, child }) => {
   );
 };
 
-export default MelangeurBtn;
+export default ColorantBtn;
