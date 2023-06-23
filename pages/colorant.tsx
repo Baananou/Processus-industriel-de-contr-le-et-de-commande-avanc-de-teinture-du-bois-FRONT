@@ -14,28 +14,28 @@ const Colorant = (props: Props) => {
       <section className="flex justify-center items-center">
         <section className="w-[1355px] h-[650px] flex justify-center items-center relative my-10 ">
           <section className="pl-24">
-            <div className="absolute top-[15px] left-[635px]">
+            <div className="absolute top-[15px] left-[670px]">
               <ColorantDisplay child="output" alertKey="MCOL" />
 
             </div>
-            <div className="absolute top-[80px] left-[280px]">
+            <div className="absolute top-[80px] left-[370px]">
               <ColorantDisplay child="output" alertKey="PCB" />
 
 
             </div>
-            <div className="absolute top-[160px] left-[280px]">
+            <div className="absolute top-[160px] left-[370px]">
               <ColorantDisplay child="output" alertKey="PCA" />
 
 
             </div>
-            <div className="absolute top-[80px] right-[185px]">
+            <div className="absolute top-[80px] right-[280px]">
               <ColorantDisplay child="output" alertKey="PCC" />
             </div>
-            <div className="absolute top-[150px] right-[270px]">
+            <div className="absolute top-[150px] right-[280px]">
               <ColorantDisplay child="output" alertKey="VCEAU" />
             </div>
 
-            <div className="absolute -bottom-[10px] left-[600px]">
+            <div className="absolute -bottom-[10px] left-[670px]">
               <ColorantDisplay child="output" alertKey="VVCOL" />
             </div>
 
@@ -53,20 +53,9 @@ const Colorant = (props: Props) => {
             <div className="flex flex-col items-end gap-2">
               <div className="flex items-center gap-2">
                 <ColorantDisplay child="output" alertKey="T1C" />
-                {/* <BtnDisplay
-                  deviceLabel="colorant-partie-2x"
-                  variableLabel="t1c"
-                  variableId={"647b42983b8a71000e2faae7"}
-                  name={"TC1"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
               </div>
               <div className="flex items-center gap-2">
                 <ColorantDisplay child="output" alertKey="T2C" />
-
-                {/* <BtnDisplay
-                  deviceLabel="colorant-partie-2"
-                  variableLabel="t2c"
-                  variableId={"647b42c102f7ff3aa0589fb5"}
-                  name={"TC2"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
               </div>
               <div className="flex items-center gap-2">
                 <ColorantInput child="input" inputkey="MPQA" />
@@ -91,22 +80,6 @@ const Colorant = (props: Props) => {
               <ColorantBtn child="input" inputKey="N0" />
               <ColorantBtn child="input" inputKey="N1" />
               <ColorantBtn child="input" inputKey="N2" />
-
-              {/* <Btn
-                deviceLabel="colorant-partie1"
-                variableLabel="n0"
-                variableId={"647b3f80d3d80204ed996625"}
-                name={"N0"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
-              <Btn
-                deviceLabel="colorant-partie1"
-                variableLabel="n1"
-                variableId={"647b3fa26b651226eafbe84c"}
-                name={"N1"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
-              <Btn
-                deviceLabel="colorant-partie1"
-                variableLabel="n2"
-                variableId={"647b40293b8a713a7b3565dd"}
-                name={"N2"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
             </div>
           </section>
         </section>
