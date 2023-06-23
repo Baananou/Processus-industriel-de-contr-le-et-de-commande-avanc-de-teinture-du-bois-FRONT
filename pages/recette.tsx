@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import RecetteInput from "../components/recetteInput";
+import RecetteInput from "../components/recette/recetteInput";
 
 
 function Recette() {

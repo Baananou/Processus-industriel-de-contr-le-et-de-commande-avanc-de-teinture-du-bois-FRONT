@@ -1,25 +1,23 @@
 import { useQuery, useQueryClient, QueryClient } from "react-query";
 import { toast } from "react-toastify";
-import axiosClient from "../axiosClient";
+import axiosClient from "../../axiosClient";
 import Image from "next/image";
-import sirenOnImage from "../public/siren_on.png";
-import sirenOffImage from "../public/siren_off.png";
+import sirenOnImage from "../../public/siren_on.png";
+import sirenOffImage from "../../public/siren_off.png";
 
 interface MelangeurAlertProps {
   child: string;
-  alertKey: string; // Renamed from 'key' to 'alertKey'
+  alertKey: string;
 }
 
 interface MelangeurData {
-  [key: string]: any; // Add other properties based on your user data structure
+  [key: string]: any;
 }
 
 const getMelangeurData = async (child: string, alertKey: string): Promise<MelangeurData> => {
   try {
     const response = await axiosClient.get(`/melangeur?${child}=${alertKey}`);
-    // console.log('====================================');
-    // console.log(response.data);
-    // console.log('====================================');
+
     return response.data;
 
   } catch (error: unknown) {
@@ -51,12 +49,15 @@ const MelangeurAlert: React.FC<MelangeurAlertProps> = ({ child, alertKey }) => {
   }
 
   const melangeurData = data as MelangeurData; // Type assertion to MelangeurData
+  console.log('=============aaaaaa==========');
+  console.log(melangeurData);
+  console.log('====================================');
 
   return (
     <div>
       <div className="h-10 flex flex-col items-center justify-center gap-2">
         <Image
-          src={melangeurData[child]?.[alertKey] ? sirenOnImage : sirenOffImage}
+          src={melangeurData.value ? sirenOnImage : sirenOffImage}
           alt="Siren"
           className="w-10 h-10"
         />

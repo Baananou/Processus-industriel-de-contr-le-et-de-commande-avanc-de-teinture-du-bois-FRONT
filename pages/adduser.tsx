@@ -3,9 +3,9 @@ import React from "react";
 import Layout from "../components/Layout";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-import UserAlert from "../components/userAlert";
-import UserInput from "../components/userInput";
-import UserBtn from "../components/userBtn";
+import UserAlert from "../components/user/userAlert";
+import UserInput from "../components/user/userInput";
+import UserBtn from "../components/user/userBtn";
 
 
 function Adduser() {

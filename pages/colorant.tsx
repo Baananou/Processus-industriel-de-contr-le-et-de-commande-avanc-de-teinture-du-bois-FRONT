@@ -1,11 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
-import BtnDisplay from "../components/btnDisplay";
-import Input from "../components/input";
-import Display from "../components/userDisplay";
-import Btn from "../components/btn";
-import ColorantInput from "../components/colorantInput";
+import ColorantInput from "../components/colorant/colorantInput";
 
 
 type Props = {};
@@ -73,18 +69,18 @@ const Colorant = (props: Props) => {
           <section className="absolute left-10 bottom-10">
             <div className="flex flex-col items-end gap-2">
               <div className="flex items-center gap-2">
-                <BtnDisplay
+                {/* <BtnDisplay
                   deviceLabel="colorant-partie-2x"
                   variableLabel="t1c"
                   variableId={"647b42983b8a71000e2faae7"}
-                  name={"TC1"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                  name={"TC1"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
               </div>
               <div className="flex items-center gap-2">
-                <BtnDisplay
+                {/* <BtnDisplay
                   deviceLabel="colorant-partie-2"
                   variableLabel="t2c"
                   variableId={"647b42c102f7ff3aa0589fb5"}
-                  name={"TC2"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                  name={"TC2"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
               </div>
               <div className="flex items-center gap-2">
                 <ColorantInput child="input" inputkey="MPQA" />
@@ -105,7 +101,7 @@ const Colorant = (props: Props) => {
           </section>
           <section className="absolute right-10">
             <div className="flex flex-col items-center gap-2">
-              <Btn
+              {/* <Btn
                 deviceLabel="colorant-partie1"
                 variableLabel="n0"
                 variableId={"647b3f80d3d80204ed996625"}
@@ -119,7 +115,7 @@ const Colorant = (props: Props) => {
                 deviceLabel="colorant-partie1"
                 variableLabel="n2"
                 variableId={"647b40293b8a713a7b3565dd"}
-                name={"N2"} apiToken={process.env.UBIDOTS_API_TOKEN2} />
+                name={"N2"} apiToken={process.env.UBIDOTS_API_TOKEN2} /> */}
             </div>
           </section>
         </section>
